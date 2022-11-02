@@ -6,6 +6,7 @@
 
 import numpy as np
 import pickle
+from collections.abc import mapping
 from flask import Flask, request, render_template
 app = Flask(__name__)
 model = pickle.load(open('model.sav', 'rb'))
